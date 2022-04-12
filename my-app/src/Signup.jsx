@@ -28,8 +28,7 @@ function Signup() {
                 .required("Minimum Length Must be 32 character"),
             addr2: Yup.string(),
             city: Yup.string()
-                .min(32)
-                .required("Must be equal to 10 characters or less"),
+                .required("Required"),
             stateregion: Yup.string(),
             zip: Yup.string().min(6, "Must be 6 Characters").max(6, "Must be 6 Characters").required("Must be 6 Characters"),
             country: Yup.string().required("Required"),
